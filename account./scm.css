@@ -1,0 +1,732 @@
+@media screen and (max-width: 800px) {
+    /* defaults */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Vazirmatn";
+    }
+    body {
+        margin: 0;
+        background: #fff;
+        color: #333333;
+        direction: rtl;
+        overflow: auto;
+    }
+
+    /* header */
+    header {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 3.5em;
+        background: #2533cc;
+        z-index: 1000;
+        direction: rtl;
+    }
+    #header-banner {
+        display: inline-block;
+        top: 0;
+        right: 0;
+    }
+    #header-logo {
+        display: inline-block;
+        width: 2.5em;
+        height: 2.5em;
+        margin: .5em 1em .5em .5em;
+        box-shadow: #fff 0 0 .15em;
+        border-radius: 100%;
+    }
+    #header-title {
+        display: inline-block;
+        font-size: 1.75em;
+        font-weight: 900;
+        color: #fff;
+        vertical-align: .6em;
+    }
+    #header-balance {
+        display: inline;
+        position: absolute;
+        left: 1em;
+        top: .5em;
+        width: max-content;
+        height: 2.5em;
+        background: #27C4AE;
+        color: #f9f9f9;
+        padding: .25em .75em .25em .75em;
+        border-radius: .75em;
+    }
+    #header-balance-icon {
+        width: 2em;
+        margin: .5 0 0 0;
+    }
+    #header-balance-value {
+        font-size: 1.25em;
+        direction: rtl;
+        vertical-align: .45em;
+        margin-right: .25em;
+    }
+
+
+    /* sidebar */
+    #sidebar-container {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        float: right;
+        width: 25%;
+        height: 100%;
+        padding: 6em 0 5% 0;
+        box-shadow: rgba(95, 99, 104, .5) 0 0 .25em;
+    }
+    .sidebar-item {
+        width: 90%;
+        padding: .5vw 10% .5vw 10%;
+        margin: .75vw 0 .75vw 0;
+        border-radius: 3vw 0 0 3vw;
+        box-shadow: rgba(95, 99, 104, .35) 0 0 .25vw;
+        cursor: pointer;
+    }
+    .sidebar-item-icon {
+        width: 2vw;
+        color: #5F6368;
+    }
+    .sidebar-item-title {
+        font-size: 2vw;
+        margin-right: 1vw;
+        vertical-align: .35vw;
+    }
+    .sidebar-item:hover {
+        background: #F5F5F5;
+    }
+    .sidebar-item-active {
+        background: #2533cc !important;
+        color: #fff !important;
+    }
+    .sidebar-item-active > svg {
+        color: #fff !important;
+    }
+    #sidebar-container > a {
+        text-decoration: none;
+        color: #333;
+    }
+
+
+
+
+    /* My Services */
+    #myServices-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        width: max-content;
+        width: 75%;
+        margin: 6vw 25% 0 0;
+    }
+    .myServices-item {
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        height: max-content;
+        margin: 2vw 5% 2vw 5%;
+        padding: 0;
+        box-shadow: rgba(51, 51, 51, .35) 0 0 .3em;
+        border-radius: 2vw;
+    }
+    .myServices-item-header {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+        height: max-content;
+        padding: 1.5vw 0 1.5vw 0;
+    }
+    .myServices-item-header-icon {
+        width: 5vw;
+        height: max-content;
+        margin: 0 2vw 0 1vw;
+        padding: .75vw;
+        background: rgba(218,220,224, .65);
+        border-radius: .75vw;
+    }
+    .myServices-item-header-title {
+        font-size: 2.25vw;
+        font-weight: 900;
+        margin-top: .65vw;
+    }
+    .myServices-item-header-status {
+        font-size: 2vw;
+        font-weight: 900;
+        padding: .25vw 2vw .25vw 2vw;
+        border-radius: 3vw;
+        width: max-content;
+        height: min-content;
+        background: #E9F9EE;
+        color: #27C4AE;
+        margin: .5vw 2vw 0 0;
+    }
+    .myServices-item-header-status-inactive {
+        font-size: 2vw;
+        font-weight: 900;
+        padding: .25vw 2vw .25vw 2vw;
+        border-radius: 3vw;
+        width: max-content;
+        height: min-content;
+        background: rgba(246, 79, 100, .25);
+        color: rgb(246, 79, 100);
+        margin: .5vw 2vw 0 0;
+    }
+    .myServices-item > hr {
+        width: 90%;
+        opacity: 75%;
+        margin: 0 5% 0 5%;
+    }
+    .myService-info {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        flex-direction: column;
+        justify-content: right;
+        width: 90%;
+        height: max-content;
+        padding: 1vw 5% 1vw 5%;
+    }
+    .myService-info > span {
+        font-size: 2vw;
+        font-family: "Vazirmatn";
+    }
+    .myService-info-region > img {
+        width: 3vw;
+        height: max-content;
+        border-radius: .5vw;
+        vertical-align: -.45vw;
+    }
+    .myService-Auth {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        justify-content: center;
+        direction: ltr;
+        width: 100%;
+        height: max-content;
+        font-size: 2vw;
+        font-family: monospace;
+        font-weight: 700;
+        padding: .5vw 1.5vw .5vw 1.5vw;
+        margin: 0 0 0 0;
+        background: rgba(0, 0, 0, .05);
+        text-align: center;
+        cursor: pointer;
+        border-radius: 0 0 1vw 1vw;
+    }
+    .myService-Auth > code {
+        display: block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+
+    /* section newservice */
+    #newService-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        width: max-content;
+        width: 75%;
+        margin: 6vw 25% 0 0;
+    }
+    .newService-item {
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        height: max-content;
+        margin: 2vw 5% 2vw 5%;
+        padding: 0;
+        box-shadow: #333 0 0 .1em;
+        border-radius: 1vw;
+    }
+    .newService-item-header {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+        height: max-content;
+        padding: 1vw 0 1vw 0;
+    }
+    .newService-item-header-icon {
+        width: 5vw;
+        height: max-content;
+        margin: 0 2vw 0 1vw;
+        padding: .75vw;
+        background: rgba(218,220,224, .65);
+        border-radius: .75vw;
+    }
+    .newService-item-header-title {
+        font-size: 2.25vw;
+        font-weight: 900;
+        margin-top: .65vw;
+    }
+    .newService-item > hr {
+        width: 90%;
+        opacity: 75%;
+        margin: 0 5% 0 5%;
+    }
+    .newService-info {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        flex-direction: column;
+        justify-content: right;
+        width: 90%;
+        height: max-content;
+        padding: 1vw 5% 1vw 5%;
+    }
+    .newService-info > span {
+        font-size: 2vw;
+        font-family: "Vazirmatn";
+    }
+    .newService-info-region > img {
+        width: 3vw;
+        height: max-content;
+        border-radius: .5vw;
+        vertical-align: -.45vw;
+    }
+    .newServiceGet {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        direction: ltr;
+        width: 100%;
+        height: max-content;
+        font-family: monospace;
+        font-weight: 700;
+        padding: .5vw 1.5vw .5vw 1.5vw;
+        margin: 0 0 0 0;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 0 0 1vw 1vw;
+    }
+    .newServiceGet-btn {
+        display: inline-block;
+        font-size: 2.35vw;
+        padding: .25em 1.5em .25em 1.5em;
+        margin: 1vw 0 1vw 0;
+        background: rgba(70, 135, 255, 1);
+        color: #fff;
+        cursor: pointer;
+        box-shadow: rgba(56, 60, 67, .25) 0 0 .25em;
+        border-radius: 1em;
+    }
+    .newServiceGet-btn:hover {
+        opacity: 90%;
+        scale: 103%;
+        transition: .1s;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+    /* defaults */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Vazirmatn";
+    }
+    body {
+        margin: 0;
+        background: #fff;
+        color: #333333;
+        direction: rtl;
+        /* overflow: hidden; */
+    }
+
+    /* header */
+    header {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 3.5em;
+        background: #2533cc;
+        z-index: 1000;
+        direction: rtl;
+    }
+    #header-banner {
+        display: inline-block;
+        top: 0;
+        right: 0;
+    }
+    #header-logo {
+        display: inline-block;
+        width: 2.5em;
+        height: 2.5em;
+        margin: .5em 1em .5em .5em;
+        box-shadow: #fff 0 0 .15em;
+        border-radius: 100%;
+    }
+    #header-title {
+        display: inline-block;
+        font-size: 1.75em;
+        font-weight: 900;
+        color: #fff;
+        vertical-align: .6em;
+    }
+
+    /* sidebar */
+    #sidebar-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        position: fixed;
+        top: auto;
+        right: 0;
+        bottom: 0;
+        float: right;
+        width: 100%;
+        height: min-content;
+        padding: 1vw 0 1vw 0;
+        box-shadow: rgba(95, 99, 104, .5) 0 0 .25em;
+        z-index: 1000;
+        background: #fff;
+    }
+    .sidebar-item {
+        width: min-content;
+        padding: 1vw;
+        margin: 0 0 0 0;
+        border-radius: 3vw;
+        box-shadow: rgba(95, 99, 104, .35) 0 0 .25vw;
+        cursor: pointer;
+    }
+    .sidebar-item-icon {
+        width: 9vw;
+        padding: .5vw;
+        color: #5F6368;
+    }
+    .sidebar-item-title {
+        display: none;
+        font-size: 1.25vw;
+        margin-right: .5vw;
+        vertical-align: .35vw;
+    }
+    .sidebar-item:hover {
+        background: #F5F5F5;
+    }
+    .sidebar-item-active {
+        background: #2533cc !important;
+        color: #fff !important;
+    }
+    .sidebar-item-active > svg {
+        color: #fff !important;
+    }
+    #sidebar-container > a {
+        text-decoration: none;
+        color: #333;
+    }
+
+
+    /* Section - MyServices */
+    #myServices-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        width: max-content;
+        width: 100%;
+        margin: 3.5em 0 0 0;
+    }
+    .myServices-item {
+        display: flex;
+        flex-wrap: wrap;
+        width: 95%;
+        height: max-content;
+        margin: 4vw 2.5% 4vw 2.5%;
+        padding: 0;
+        box-shadow: rgba(51, 51, 51, .35) 0 0 .3em;
+        border-radius: 3vw;
+    }
+    .myServices-item-header {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+        height: max-content;
+        padding: 2vw 0 2vw 0;
+    }
+    .myServices-item-header-icon {
+        width: 10vw;
+        height: max-content;
+        margin: 0 4vw 0 2vw;
+        padding: 1.5vw;
+        background: rgba(218,220,224, .65);
+        border-radius: 2vw;
+    }
+    .myServices-item-header-title {
+        font-size: 5vw;
+        font-weight: 900;
+        margin-top: .65vw;
+    }
+    .myServices-item-header-status {
+        font-size: 4vw;
+        font-weight: 900;
+        padding:  .75vw 2vw .75vw 2vw;
+        border-radius: 3vw;
+        width: max-content;
+        height: min-content;
+        background: #E9F9EE;
+        color: #27C4AE;
+        margin: .5vw 10vw 0 0;
+    }
+    .myServices-item-header-status-inactive {
+        font-size: 4vw;
+        font-weight: 900;
+        padding: .75vw 2vw .75vw 2vw;
+        border-radius: 3vw;
+        width: max-content;
+        height: min-content;
+        background: rgba(246, 79, 100, .25);
+        color: rgb(246, 79, 100);
+        margin: .5vw 10vw 0 0;
+    }
+    .myServices-item > hr {
+        width: 90%;
+        opacity: 75%;
+        margin: 0 5% 0 5%;
+    }
+    .myService-info {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        flex-direction: column;
+        justify-content: right;
+        width: 90%;
+        height: max-content;
+        padding: 1vw 5% 1vw 5%;
+    }
+    .myService-info > span {
+        font-size: 3.75vw;
+        font-family: "Vazirmatn";
+    }
+    .myService-info-region > img {
+        width: 5vw;
+        height: max-content;
+        border-radius: 1vw;
+        vertical-align: -.5vw;
+    }
+    .myService-Auth {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        justify-content: center;
+        direction: ltr;
+        width: 100%;
+        height: max-content;
+        font-size: 4.5vw;
+        font-family: monospace;
+        font-weight: 700;
+        padding: 1vw 3vw 1vw 3vw;
+        margin: 0 0 0 0;
+        background: rgba(0, 0, 0, .05);
+        text-align: center;
+        cursor: pointer;
+        border-radius: 0 0 3vw 3vw;
+    }
+    .myService-Auth > code {
+        display: block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    
+    
+    /* section newservice */
+    #newService-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        width: max-content;
+        width: 100%;
+        margin: 3.5em 0 0 0;
+    }
+    .newService-item {
+        display: flex;
+        flex-wrap: wrap;
+        width: 95%;
+        height: max-content;
+        margin: 4vw 2.5% 4vw 2.5%;
+        padding: 0;
+        box-shadow: rgba(51, 51, 51, .35) 0 0 .3em;
+        border-radius: 3vw;
+    }
+    .newService-item-header {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+        height: max-content;
+        padding: 2vw 0 2vw 0;
+    }
+    .newService-item-header-icon {
+        width: 10vw;
+        height: max-content;
+        margin: 0 4vw 0 2vw;
+        padding: 1.5vw;
+        background: rgba(218,220,224, .65);
+        border-radius: 2vw;
+    }
+    .newService-item-header-title {
+        font-size: 5vw;
+        font-weight: 900;
+        margin-top: .65vw;
+    }
+    .newService-item > hr {
+        width: 90%;
+        opacity: 75%;
+        margin: 0 5% 0 5%;
+    }
+    .newService-info {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        flex-direction: column;
+        justify-content: right;
+        width: 90%;
+        height: max-content;
+        padding: 1vw 5% 1vw 5%;
+    }
+    .newService-info > span {
+        font-size: 3.75vw;
+        font-family: "Vazirmatn";
+    }
+    .newService-info-region > img {
+        width: 5vw;
+        height: max-content;
+        border-radius: 1vw;
+        vertical-align: -.5vw;
+    }
+    .newServiceGet {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        direction: ltr;
+        width: 100%;
+        height: max-content;
+        font-size: 1vw;
+        font-family: monospace;
+        font-weight: 700;
+        padding: .5vw 1.5vw .5vw 1.5vw;
+        margin: 0 0 0 0;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 0 0 1vw 1vw;
+    }
+    .newServiceGet-btn {
+        display: inline-block;
+        font-size: 4em;
+        padding: .35em 2em .35em 2em;
+        margin: 1vw 0 1vw 0;
+        background: rgba(70, 135, 255, 1);
+        color: #fff;
+        cursor: pointer;
+        box-shadow: rgba(56, 60, 67, .25) 0 0 .25em;
+        border-radius: 2em;
+    }
+    .newServiceGet-btn:hover {
+        opacity: 90%;
+        scale: 103%;
+        transition: .1s;
+    }
+    
+    /* section - payment */
+    #payment-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        margin: 6em 0 0 0;
+    }
+    #payment-form {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+        height: min-content;
+        margin: 2em 5% 0 5%;
+        box-shadow: rgba(0, 0, 0, .25) 0 0 .5em;
+        border-radius: 1.25em;
+    }
+    #payment-title {
+        font-size: 1.25em;
+        font-family: "Vazirmatn";
+        font-weight: 900;
+        text-align: center;
+        width: 100%;
+        margin: 1em 0 1em 0;
+    }
+    #payment-input {
+        font-size: 1.15em;
+        font-family: "Vazirmatn";
+        width: 80%;
+        height: min-content;
+        margin: 1em 10% 1em 10%;
+        padding: .35em 5% .35em 5%;
+        direction: rtl;
+        box-shadow: rgba(0, 0, 0, .75) 0 0 .15em;
+        border: none;
+        border-radius: .75em;
+    }
+    #payment-submit {
+        font-size: 1.15em;
+        font-family: "Vazirmatn";
+        width: max-content;
+        height: min-content;
+        color: #fff;
+        background: #2533CC;
+        margin: 1em 36% 1em 36%;
+        padding: .35em 1.25em .35em 1.25em;
+        border: none;
+        border-radius: .75em;
+        cursor: pointer;
+    }
+}
